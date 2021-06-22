@@ -25,6 +25,15 @@
   border-radius: 30px;
 }
 
+.cart-items-list > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cart-items-list > ul > li {
+  list-style-type: none;
+}
+
 .controls {
   height: 8em;
   display: flex;

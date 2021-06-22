@@ -17,44 +17,44 @@ const CartModal = (props) => {
         <div className={classes["cart-items-list"]}>
           <ul>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
             <li>
-              <span>Steve</span>
-              <span>x 1</span>
-              <span>$5.00</span>
+              <span className={classes.name}>Steve</span>
+              <span className={classes.amount}>x 1</span>
+              <span className={classes.price}>$5.00</span>
             </li>
           </ul>
         </div>
