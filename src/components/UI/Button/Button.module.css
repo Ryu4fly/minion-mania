@@ -1,0 +1,14 @@
+.button {
+  background-color: #0a75bc;
+  font-family: "Proza Libre";
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  width: 10vw;
+  height: 8vh;
+  border-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

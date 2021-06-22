@@ -1,10 +1,12 @@
 import React, { Fragment, useState } from "react";
 
 import BackgroundImage from "./components/Layout/BackgroundImage/BackgroundImage";
+
+import AvailableMinions from "./components/Minions/AvailableMinions";
+import CartModal from "./components/Layout/Navbar/CartModal/CartModal";
 import Navbar from "./components/Layout/Navbar/Navbar";
 import ProjectSum from "./components/Layout/ProjectSum/ProjectSum";
-import AvailableMinions from "./components/Minions/AvailableMinions";
-import Modal from "./components/UI/Modal/Modal";
+
 function App() {
   const [showCart, setShowCart] = useState(false);
 
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <Fragment>
-      {showCart && <Modal onClick={showCartHandler} />}
+      {showCart && <CartModal onClick={showCartHandler} />}
       <BackgroundImage>
         <Navbar onClick={showCartHandler} />
         <ProjectSum />
