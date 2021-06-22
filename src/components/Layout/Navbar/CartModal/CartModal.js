@@ -2,6 +2,7 @@ import React from "react";
 
 import classes from "./CartModal.module.css";
 
+import CartItem from "./CartItem/CartItem";
 import Button from "../../../UI/Button/Button";
 import Modal from "../../../UI/Modal/Modal";
 
@@ -16,62 +17,7 @@ const CartModal = (props) => {
       <div className={classes["cart-contents"]}>
         <div className={classes["cart-items-list"]}>
           <h2 className={classes["cart-title"]}>CART</h2>
-          <ul>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-              <button className={`${classes.actions} ${classes.add}`}>+</button>
-              <button className={`${classes.actions} ${classes.subtract}`}>
-                -
-              </button>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-              <button className={`${classes.actions} ${classes.add}`}>+</button>
-              <button className={`${classes.actions} ${classes.subtract}`}>
-                -
-              </button>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-              <button className={`${classes.actions} ${classes.add}`}>+</button>
-              <button className={`${classes.actions} ${classes.subtract}`}>
-                -
-              </button>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-              <button className={`${classes.actions} ${classes.add}`}>+</button>
-              <button className={`${classes.actions} ${classes.subtract}`}>
-                -
-              </button>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-              <button className={`${classes.actions} ${classes.add}`}>+</button>
-              <button className={`${classes.actions} ${classes.subtract}`}>
-                -
-              </button>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-              <button className={`${classes.actions} ${classes.add}`}>+</button>
-              <button className={`${classes.actions} ${classes.subtract}`}>
-                -
-              </button>
-            </li>
-          </ul>
+          <CartItem />
           <h3 className={classes.total}>Total: $10.00</h3>
         </div>
         <div className={classes.controls}>
