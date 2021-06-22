@@ -12,3 +12,7 @@
   background-color: gray;
   border-radius: 50%;
 }
+
+.avatar-name {
+  margin: 0;
+}
