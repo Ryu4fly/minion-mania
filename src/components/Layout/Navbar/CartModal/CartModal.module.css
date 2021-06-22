@@ -21,7 +21,7 @@
 .cart-title {
   color: white;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .cart-items-list {
@@ -35,10 +35,13 @@
 }
 
 .cart-items-list > ul {
-  padding: 0;
+  margin: 0;
+  padding: 2% 0;
   width: 90%;
   height: 65%;
   overflow: auto;
+  border-top: solid white;
+  border-bottom: solid white;
 }
 
 .cart-items-list > ul > li {
@@ -46,10 +49,36 @@
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.2em;
+  display: flex;
+  align-items: center;
 }
 
 .cart-items-list > ul > li > span {
-  margin-right: 8%;
+  color: white;
+  margin-right: 3%;
+}
+
+.actions {
+  height: 2em;
+  width: 2em;
+  background: none;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  color: white;
+}
+.add {
+  margin-right: 5%;
+}
+
+hr {
+  width: 80%;
+}
+
+.total {
+  margin-top: 0;
+  color: white;
+  font-size: 1.5em;
 }
 
 .controls {
