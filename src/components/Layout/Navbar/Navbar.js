@@ -4,7 +4,7 @@ import classes from "./Navbar.module.css";
 
 import CartButton from "./CartButton";
 
-const Navbar = (porps) => {
+const Navbar = (props) => {
   return (
     <div className={classes.navbar}>
       <div className={classes.banner}>
@@ -15,7 +15,7 @@ const Navbar = (porps) => {
         />
         <h1 className={classes["banner-title"]}>MINION MANIA</h1>
       </div>
-      <CartButton text="CART" />
+      <CartButton text="CART" onClick={props.onClick} />
     </div>
   );
 };

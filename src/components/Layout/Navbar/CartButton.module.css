@@ -2,9 +2,23 @@
   background-color: #0a75bc;
   font-family: "Proza Libre";
   font-weight: bold;
+  font-size: 1.3rem;
   color: white;
   width: 10%;
   height: 60%;
   border-color: white;
   border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-counter {
+  border: 2px white solid;
+  height: 50%;
+  width: 20%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
