@@ -1,0 +1,10 @@
+.cart-button {
+  background-color: #0a75bc;
+  font-family: "Proza Libre";
+  font-weight: bold;
+  color: white;
+  width: 10%;
+  height: 60%;
+  border-color: white;
+  border-radius: 30px;
+}

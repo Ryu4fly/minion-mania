@@ -1,0 +1,82 @@
+.summary-container {
+  background-color: #949699;
+  width: 40%;
+  height: 30%;
+  margin: 3vh auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.header {
+  width: 100%;
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.welcome {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.react-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.summary {
+  text-align: center;
+  margin: 3% 0 0 0;
+  padding: 1% 6%;
+  font-size: 1.5em;
+}
+
+.summary span {
+  font-size: 0.5em;
+}
+
+.portfolio {
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio:hover {
+  color: #0a75bc;
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo-clockwise {
+    animation: logo-clockwise infinite 20s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo-counter {
+    animation: logo-counter infinite 20s linear;
+  }
+}
+
+@keyframes logo-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-counter {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

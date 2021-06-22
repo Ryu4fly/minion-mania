@@ -1,0 +1,14 @@
+.avatar {
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-img {
+  height: 50%;
+  width: 50%;
+  background-color: gray;
+  border-radius: 50%;
+}
