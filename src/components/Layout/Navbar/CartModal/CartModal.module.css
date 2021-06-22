@@ -18,20 +18,38 @@
   right: 10%;
 }
 
+.cart-title {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
 .cart-items-list {
-  background-color: rgba(168, 122, 81, 80%);
+  background-color: #a87a51;
   width: 18em;
   height: 60%;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-items-list > ul {
-  margin: 0;
   padding: 0;
+  width: 90%;
+  height: 65%;
+  overflow: auto;
 }
 
 .cart-items-list > ul > li {
   list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.cart-items-list > ul > li > span {
+  margin-right: 8%;
 }
 
 .controls {

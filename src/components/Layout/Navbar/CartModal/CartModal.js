@@ -15,22 +15,8 @@ const CartModal = (props) => {
       />
       <div className={classes["cart-contents"]}>
         <div className={classes["cart-items-list"]}>
+          <h2 className={classes["cart-title"]}>CART</h2>
           <ul>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-            </li>
-            <li>
-              <span className={classes.name}>Steve</span>
-              <span className={classes.amount}>x 1</span>
-              <span className={classes.price}>$5.00</span>
-            </li>
             <li>
               <span className={classes.name}>Steve</span>
               <span className={classes.amount}>x 1</span>
