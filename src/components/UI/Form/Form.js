@@ -8,7 +8,9 @@ const Form = (props) => {
   const [enteredAmount, setEnteredAmount] = useState(1);
 
   const amountChangeHandler = (event) => {
-    setEnteredAmount(+event.target.value);
+    setEnteredAmount((prevAmount) => {
+      return (prevAmount = +event.target.value);
+    });
   };
 
   const submitHandler = (event) => {
