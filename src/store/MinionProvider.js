@@ -1,39 +1,32 @@
 import React, { useReducer } from "react";
 
 import MinionContext from "./minion-context";
-import { MINIONS_DATA } from "./minion-data";
 
-const defaultCartState = {
+const defaultMinionDataState = {
   items: [],
   totalCost: 0,
 };
 
 const minionReducer = (state, action) => {
+  let selectedMinion;
   if (action.type === "selectedAvatar") {
-    const filteredMinon = state.data.filter(
-      (minion) => minion.id === action.id
-    );
-    console.log(filteredMinon);
+    selectedMinion = state.data.filter((minion) => minion.id === action.id);
   }
+  return selectedMinion[0];
 };
 
 const MinionProvider = (props) => {
   const [minionsState, dispatchMinionsAction] = useReducer(
     minionReducer,
-    defaultCartState
+    defaultMinionDataState
   );
 
-  const selectedAvatarHandler = (id) => {
-    dispatchMinionsAction({ type: "selectedAvatar", id: id });
-  };
-
   const minionContext = {
-    data: MINIONS_DATA,
-    cartItems: minionsState.cartItems,
-    totalCost: minionsState.totalCost,
+    // cartItems: minionsState.cartItems,
+    // totalCost: minionsState.totalCost,
     onAdd: () => {},
     onSubtract: () => {},
-    onSelectedAvatar: selectedAvatarHandler,
+    // onSelectedAvatar: selectedAvatarHandler,
   };
 
   return (

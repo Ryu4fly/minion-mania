@@ -3,8 +3,13 @@ import React from "react";
 import classes from "./MinionAvatar.module.css";
 
 const MinionAvatar = (props) => {
+  const filterMinionHander = () => {
+    props.onFilterMinon(props.id);
+    props.onClick();
+  };
+
   return (
-    <div id={props.id} className={classes.avatar} onClick={props.onClick}>
+    <div id={props.id} className={classes.avatar} onClick={filterMinionHander}>
       <img
         className={classes["avatar-img"]}
         src={props.img}

@@ -1,20 +1,17 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import classes from "./AvailableMinions.module.css";
 
 import MinionAvatar from "./MinionAvatar/MinionAvatar";
-import MinionContext from "../../store/minion-context";
 
 const AvailableMinions = (props) => {
-  const ctx = useContext(MinionContext);
-  const { data } = ctx;
-
-  const minionList = data.map((minion) => (
+  const minionList = props.data.map((minion) => (
     <MinionAvatar
       key={minion.id}
       id={minion.id}
       name={minion.name}
       img={minion.img}
+      onFilterMinon={props.onFilterMinon}
       onClick={props.onClick}
     />
   ));
