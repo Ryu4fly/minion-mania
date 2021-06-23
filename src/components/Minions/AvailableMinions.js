@@ -54,6 +54,7 @@ const AvailableMinions = (props) => {
       id={minion.id}
       name={minion.name}
       img={minion.img}
+      onClick={props.onClick}
     />
   ));
   return (

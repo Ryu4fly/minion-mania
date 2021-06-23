@@ -4,7 +4,7 @@ import classes from "./MinionAvatar.module.css";
 
 const MinionAvatar = (props) => {
   return (
-    <div id={props.id} className={classes.avatar}>
+    <div id={props.id} className={classes.avatar} onClick={props.onClick}>
       <img
         className={classes["avatar-img"]}
         src={props.img}
