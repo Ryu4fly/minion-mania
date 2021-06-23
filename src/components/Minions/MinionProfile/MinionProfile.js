@@ -2,6 +2,7 @@ import React from "react";
 
 import classes from "./MinionProfile.module.css";
 
+import Form from "../../UI/Form/Form";
 import Modal from "../../UI/Modal/Modal";
 
 const MinionProfile = (props) => {
@@ -17,7 +18,7 @@ const MinionProfile = (props) => {
         src={minion.profileImg}
         alt={`${minion.name}`}
       />
-      <p>{minion.name}</p>
+      <Form id={minion.id} onCancel={props.onClick} />
     </Modal>
   );
 };
