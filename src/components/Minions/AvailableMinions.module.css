@@ -17,8 +17,8 @@
 
 .shopping-list-items {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 100%;
-  width: 80%;
+  height: 50vh;
+  width: 90%;
 }

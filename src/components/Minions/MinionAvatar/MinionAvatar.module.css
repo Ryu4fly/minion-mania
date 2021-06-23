@@ -20,6 +20,10 @@
   font-weight: bold;
 }
 
+.avatar:hover {
+  cursor: pointer;
+}
+
 .avatar:hover .avatar-name {
   text-decoration: underline;
 }
