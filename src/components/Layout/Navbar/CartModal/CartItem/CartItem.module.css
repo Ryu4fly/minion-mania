@@ -1,17 +1,6 @@
-li {
-  list-style-type: none;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 0.2em;
-  display: flex;
-  align-items: center;
+.name {
+  width: 5vw;
 }
-
-li > span {
-  color: white;
-  margin-right: 3%;
-}
-
 .actions {
   height: 2em;
   width: 2em;
@@ -20,7 +9,4 @@ li > span {
   border-style: solid;
   border-radius: 5px;
   color: white;
-}
-.add {
-  margin-right: 5%;
 }
