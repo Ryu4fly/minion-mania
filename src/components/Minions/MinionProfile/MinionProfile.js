@@ -18,7 +18,7 @@ const MinionProfile = (props) => {
         src={minion.profileImg}
         alt={`${minion.name}`}
       />
-      <Form id={minion.id} onCancel={props.onClick} />
+      <Form id={minion.id} name={minion.name} onCancel={props.onClick} />
     </Modal>
   );
 };
