@@ -21,6 +21,9 @@ const CartModal = (props) => {
       amount={item.amount}
     />
   ));
+
+  const emptyCart = <p>You Have No Items In The Cart</p>;
+
   return (
     <Modal className={classes["cart-modal"]} onClick={props.onClick}>
       <img
@@ -31,7 +34,7 @@ const CartModal = (props) => {
       <div className={classes["cart-contents"]}>
         <div className={classes["cart-items-list"]}>
           <h2 className={classes["cart-title"]}>CART</h2>
-          <ul>{items}</ul>
+          {items.length === 0 ? emptyCart : <ul>{items}</ul>}
           <h3 className={classes.total}>Total: ${totalCost.toFixed(2)}</h3>
         </div>
         <div className={classes.controls}>
