@@ -20,10 +20,14 @@ const Form = (props) => {
 
   return (
     <Fragment>
-      <form onSubmit={submitHandler} htmlFor={`amount-${props.id}`}>
+      <form
+        className={classes["profile-form"]}
+        onSubmit={submitHandler}
+        htmlFor={`amount-${props.id}`}
+      >
         <input
           id={`amount-${props.id}`}
-          className={classes.input}
+          className={classes["amount-input"]}
           onChange={amountChangeHandler}
           type="number"
           min="0"
@@ -32,8 +36,8 @@ const Form = (props) => {
           step="1"
         />
         <Button type="submit" text="Add to Cart" />
+        <Button text="Cancel" onClick={props.onCancel} />
       </form>
-      <Button text="Cancel" onClick={props.onCancel} />
     </Fragment>
   );
 };
