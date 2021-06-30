@@ -1,6 +1,11 @@
 .name {
   width: 5vw;
 }
+
+.amount {
+  width: 3vw;
+}
+
 .actions {
   height: 2em;
   width: 2em;
