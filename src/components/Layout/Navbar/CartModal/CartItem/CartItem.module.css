@@ -1,14 +1,4 @@
-ul {
-  margin: 0;
-  padding: 2% 0;
-  width: 90%;
-  height: 65%;
-  overflow: auto;
-  border-top: solid white;
-  border-bottom: solid white;
-}
-
-ul > li {
+li {
   list-style-type: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -17,7 +7,7 @@ ul > li {
   align-items: center;
 }
 
-ul > li > span {
+li > span {
   color: white;
   margin-right: 3%;
 }

@@ -34,6 +34,16 @@
   align-items: center;
 }
 
+ul {
+  margin: 0;
+  padding: 2% 0;
+  width: 90%;
+  height: 65%;
+  overflow: auto;
+  border-top: solid white;
+  border-bottom: solid white;
+}
+
 .total {
   margin: 5% 0;
   color: white;

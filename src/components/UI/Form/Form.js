@@ -1,10 +1,12 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useContext } from "react";
 
 import classes from "./Form.module.css";
 
 import Button from "../Button/Button";
+import CartContext from "../../../store/cart-context";
 
 const Form = (props) => {
+  const ctx = useContext(CartContext);
   const [enteredAmount, setEnteredAmount] = useState(1);
 
   const amountChangeHandler = (event) => {
@@ -15,7 +17,12 @@ const Form = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log(enteredAmount);
+    const item = {
+      id: props.id,
+      name: props.name,
+      amount: enteredAmount,
+    };
+    ctx.addItem(item);
   };
 
   return (

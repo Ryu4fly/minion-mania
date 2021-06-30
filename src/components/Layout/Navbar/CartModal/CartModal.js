@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import classes from "./CartModal.module.css";
 
@@ -6,7 +6,21 @@ import CartItem from "./CartItem/CartItem";
 import Button from "../../../UI/Button/Button";
 import Modal from "../../../UI/Modal/Modal";
 
+import CartContext from "../../../../store/cart-context";
+
 const CartModal = (props) => {
+  const ctx = useContext(CartContext);
+
+  const { totalCost } = ctx;
+
+  const items = ctx.items.map((item) => (
+    <CartItem
+      key={item.id}
+      id={item.id}
+      name={item.name}
+      amount={item.amount}
+    />
+  ));
   return (
     <Modal className={classes["cart-modal"]} onClick={props.onClick}>
       <img
@@ -17,8 +31,8 @@ const CartModal = (props) => {
       <div className={classes["cart-contents"]}>
         <div className={classes["cart-items-list"]}>
           <h2 className={classes["cart-title"]}>CART</h2>
-          <CartItem />
-          <h3 className={classes.total}>Total: $10.00</h3>
+          <ul>{items}</ul>
+          <h3 className={classes.total}>Total: ${totalCost.toFixed(2)}</h3>
         </div>
         <div className={classes.controls}>
           <Button text="ORDER" />
